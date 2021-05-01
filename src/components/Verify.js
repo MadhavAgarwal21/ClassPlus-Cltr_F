@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button, Form, FormGroup, FormControl, FormLabel, Label, Input } from 'reactstrap'
 
-function Checks() {
+function Verify() {
     return (
         <div className="d-flex flex-row justify-content-center align-items-center" style={{ marginTop: "100px" }}>
             <div className="d-flex flex-column">
@@ -22,16 +22,16 @@ function Checks() {
 
             <div className="d-flex flex-column mx-5">
 
-                <p style={{ color: "green" }}>Face Recognized</p>
+                <p style={{ color: "green" }}> <del> Face Recognized </del> </p>
 
                 <p>Face registered</p>
                 <p>Cofirm Detection</p>
 
-                <Button color="success" style={{ marginTop: "20px" }}>Register</Button>
+                <Button color="success" style={{ marginTop: "20px" }}>Enter Class</Button>
             </div>
 
         </div>
     )
 }
 
-export default Checks
+export default Verify

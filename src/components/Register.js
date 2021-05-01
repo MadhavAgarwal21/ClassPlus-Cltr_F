@@ -1,34 +1,37 @@
 import React from 'react'
 import {Button,Form,FormGroup,FormControl,FormLabel,Label,Input} from 'reactstrap'
 
-function register() {
+function Register() {
     return (
-        <div class='container' >
+        <div className="d-flex flex-row justify-content-center align-items-center" style={{ marginTop: "100px" }}>
+        <div className="d-flex flex-column">
             <div>
                 <img src="./images/logo.jpg" alt="" />
-                <h4 >Register</h4>
-                
-                <Form className="login-form">
-                    
-                    <FormGroup>
-                        <Input type="name" placeholder="Name"/>
-                    </FormGroup>
-                    <FormGroup>
-                        <Input type="tel" placeholder="Mobile Number"/>
-                    </FormGroup>
-                    <FormGroup>
-                        <Button color="info" >Info</Button>
-                    </FormGroup>
-                </Form> 
-                
             </div>
+            <h4 >Register</h4>
 
-            <div>
-                <img src="./images/robot.jpg" alt="" />
-            </div>
+            <Form className="login-form" style={{ maxWidth: "300px" }}>
+                <FormGroup>
+                    <Input type="name" placeholder="Name" />
+                </FormGroup>
+                <FormGroup>
+                    <Input type="tel" placeholder="Mobile Number" />
+                </FormGroup>
+                <FormGroup>
+                    <Button color="info" >Next</Button>
+                </FormGroup>
+            </Form>
 
         </div>
+
+        <div className="d-flex">
+            <img src="./images/robot.jpg" alt="" />
+        </div>
+
+        {/* <p>not registered yet? <b>Register Now</b></p> */}
+
+    </div>
     )
 }
 
-export default register
+export default Register

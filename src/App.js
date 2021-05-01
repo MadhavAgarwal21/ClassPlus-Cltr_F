@@ -1,12 +1,35 @@
+
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+
+//BOOTSTRAP
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+
 import './App.css';
+import Login from './components/Login.js';
 import Register from './components/Register.js';
-import {Button} from 'reactstrap';
+import Checks from './components/Checks.js';
+import { Button } from 'reactstrap';
+
 
 function App() {
   return (
-    <div className="App">
-      <Register/>
-    </div>
+    <Container fluid style={{ padding: '0px' }}>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/check" component={Checks} />
+          <Route component={Login} />
+        </Switch>
+      </BrowserRouter>
+    </Container>
+    // <div className="App">
+    //   <Login/>
+    //   {/* <Register /> */}
+    // </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Form, FormGroup, FormControl, FormLabel, Label, Input } from 'reactstrap'
 
+
 function Login() {
     return (
         <div className="d-flex flex-row justify-content-center align-items-center" style={{ marginTop: "100px" }}>
@@ -18,7 +19,7 @@ function Login() {
                         <Input type="tel" placeholder="Mobile Number" />
                     </FormGroup>
                     <FormGroup>
-                        <Button color="info" >Enter</Button>
+                        <Button color="info" onClick={alert('Name & contact saved in store')} >Enter</Button>
                     </FormGroup>
                 </Form>
 

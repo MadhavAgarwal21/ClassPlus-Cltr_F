@@ -18,7 +18,7 @@ function Register() {
                     <Input type="tel" placeholder="Mobile Number" />
                 </FormGroup>
                 <FormGroup>
-                    <Button color="info" >Next</Button>
+                    <Button color="info" onClick={alert('Name & contact saved in store')} >Next</Button>
                 </FormGroup>
             </Form>
 
